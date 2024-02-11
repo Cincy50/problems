@@ -1,4 +1,22 @@
+import check50
+import check50.c
+
 @check50.check()
-def test1():
-  """responds to name walkdo"""
-  check50.run("./hello").stdin("Waldo").stdout("Hello, Waldo").exit(0)
+def exists():
+    """hello.c exists"""
+    check50.exists("hello.c")
+
+@check50.check(exists)
+def compiles():
+    """hello.c compiles"""
+    check50.c.compile("hello.c", lcs50=True)
+
+@check50.check(compiles)
+def emma():
+    """responds to name Emma"""
+    check50.run("./hello").stdin("Emma").stdout("Hello, Emma").exit()
+
+@check50.check(compiles)
+def rodrigo():
+    """responds to name Rodrigo"""
+    check50.run("./hello").stdin("Rodrigo").stdout("Hello, Rodrigo").exit()
