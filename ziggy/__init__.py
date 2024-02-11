@@ -23,7 +23,7 @@ def callAyZiggyZoomba():
 
 @check50.check(compiles)
 def callAyZiggyOops():
-    """Call Out to Garbage then Prompt again 'Enter the call: '"""
+    """Rejects Garbage then Prompt again 'Enter the call: '"""
     check50.run("./ziggy").stdin("Go vols!").reject()
 @check50.check(compiles)
 def callZiggyQuits():
