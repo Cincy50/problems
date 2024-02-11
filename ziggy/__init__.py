@@ -16,8 +16,14 @@ def callAyZiggy():
     """Call Out to Ay Ziggy"""
     check50.run("./ziggy").stdin("Ay Ziggy").stdout("Zoomba!\n").exit(0)
 
-
 @check50.check(compiles)
 def callAyZiggyZoomba():
     """Call Out to Ay Ziggy Zoomba Zoomba Zoomba"""
     check50.run("./ziggy").stdin("Ay Ziggy Zoomba Zoomba Zoomba").stdout("Ay Ziggy Zoomba Zoomba Ze!\n").exit(0)
+
+@check50.check(compiles)
+def callZiggy Quits():
+    """Make Sure program Ends"""
+    check50.run("./ziggy").stdin("q").stdout("").exit(0)
+
+
