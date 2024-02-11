@@ -22,7 +22,7 @@ def callAyZiggyZoomba():
     check50.run("./ziggy").stdin("Ay Ziggy Zoomba Zoomba Zoomba").stdout("Ay Ziggy Zoomba Zoomba Ze!\n").exit(0)
 
 @check50.check(compiles)
-def callZiggy Quits():
+def callZiggyQuits():
     """Make Sure program Ends"""
     check50.run("./ziggy").stdin("q").stdout("").exit(0)
 
