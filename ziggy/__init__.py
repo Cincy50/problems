@@ -14,7 +14,7 @@ def compiles():
 @check50.check(compiles)
 def callAyZiggy():
     """Call Out to Ay Ziggy"""
-    check50.run("./ziggy").stdin("Ay Ziggy").stdout("Zoomba!\n").exit(0)
+    check50.run("./ziggy").stdin("Ay Ziggy").stdout("Zoomba!\n").stdin("q").exit(0)
 
 @check50.check(compiles)
 def callAyZiggyZoomba():
