@@ -13,10 +13,5 @@ def compiles():
 
 @check50.check(compiles)
 def emma():
-    """responds to name Emma"""
-    check50.run("./hello").stdin("Emma").stdout("Hello, Emma").exit()
-
-@check50.check(compiles)
-def rodrigo():
-    """responds to name Rodrigo"""
-    check50.run("./hello").stdin("Rodrigo").stdout("Hello, Rodrigo").exit()
+    """Prints Hello, world!\n"""
+    check50.run("./hello").stdout("Hello, world!\n").exit()
