@@ -1,0 +1,7 @@
+check50:
+  files: &check50_files
+    - !exclude "*"
+    - !require ziggy.c
+
+submit50:
+  files: *check50_files
