@@ -19,4 +19,4 @@ def emma():
 @check50.check(compiles)
 def rodrigo():
     """responds to name Rodrigo"""
-    check50.run("./helloyou").stdin("SingerBee").stdout("Hello, StingerBee").exit()
+    check50.run("./helloyou").stdin("StingerBee").stdout("Hello, StingerBee").exit()
