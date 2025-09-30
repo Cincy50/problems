@@ -14,4 +14,4 @@ def compiles():
 @check50.check(compiles)
 def emma():
     """Prints Hello, world!\n"""
-    check50.run("./hello").stdout("Hello, world!\n").exit()
+    check50.run("./hello").stdout("howdy, Siena!\n").exit()
