@@ -15,4 +15,12 @@ def compiles():
 @check50.check(compiles)
 def test1():
     """handles a purchase of $2.50 with a $5 bill """
-    check50.run("./casheh").stdin("quint").stdout("Your guess is not in my list").exit(0)
+    check50.run("./casheh").stdin("2.50").stdin("5").stdout("I owe you: 2.50\n").stdout("Loonies: 2\n").stdout("Quarters: 2\n").stdout("Dimes: 0\n").stdout("Nickels: 0\n").exit(0)
+
+
+
+@check50.check(compiles)
+def test1():
+    """handles a purchase of $3.03 with a $10 bill """
+    check50.run("./casheh").stdin("2.50").stdin("5").stdout("I owe you: 6.97\n").stdout("Loonies: 7\n").stdout("Quarters: 0\n").stdout("Dimes: 0\n").stdout("Nickels: 0\n").exit(0)
+
