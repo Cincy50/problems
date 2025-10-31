@@ -1,0 +1,12 @@
+lab50:
+  files:
+    - !exclude "*"
+    - !include casheh.c
+
+check50:
+  files: &check50_files
+    - !exclude "*"
+    - !require casheh.c
+
+submit50:
+  files: *check50_files
