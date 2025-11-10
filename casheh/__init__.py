@@ -20,7 +20,7 @@ def test1():
 
 
 @check50.check(compiles)
-def test1():
+def test2():
     """handles a purchase of $3.03 with a $10 bill """
-    check50.run("./casheh").stdin("2.50").stdin("5").stdout("I owe you: 6.97\n").stdout("Loonies: 7\n").stdout("Quarters: 0\n").stdout("Dimes: 0\n").stdout("Nickels: 0\n").exit(0)
+    check50.run("./casheh").stdin("3.03").stdin("10").stdout("I owe you: 6.97\n").stdout("Loonies: 7\n").stdout("Quarters: 0\n").stdout("Dimes: 0\n").stdout("Nickels: 0\n").exit(0)
 
