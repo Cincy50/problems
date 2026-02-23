@@ -1,1 +1,8 @@
 
+check50: 
+  files: &check50_files
+    - !exclude "*"
+    - !require wordle.c
+
+submit50:
+  files: *check50_files
